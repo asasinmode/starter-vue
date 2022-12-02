@@ -1,9 +1,10 @@
 # asasinmode vue starter
 
-This is a [Vue 3](https://vuejs.org/) + [Typescript](https://www.typescriptlang.org/) starter for new projects.
+This is a [vue 3](https://vuejs.org/) template for new projects.
 
 ## stuff included
 
+ - [typescript](https://www.typescriptlang.org/)
  - [reactivity transform](https://vuejs.org/guide/extras/reactivity-transform.html)
  - [pinia](https://pinia.vuejs.org/)
  - [vue router](https://router.vuejs.org/)
