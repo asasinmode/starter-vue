@@ -1,5 +1,5 @@
 <template>
   <TheNavigation />
-  <RouterView />
-  <ThemeToggle />
+  <RouterView col-span-full />
+  <TheFooter />
 </template>

@@ -27,6 +27,7 @@ export default defineConfig({
   shortcuts: [
     {
       'flex-center': 'flex justify-center items-center',
+      'text-link': 'op85 hoverable:(underline op100)',
     },
     [/^hoverable[:-](.+)$/, ([, c]) => `hover:${c} focus-visible:${c}`],
   ],

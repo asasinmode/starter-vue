@@ -3,14 +3,14 @@ const text = 'asasinmode'
 </script>
 
 <template>
-  <h1 text-center>
+  <main flex-center>
     <button
       v-for="(letter, index) in text" :key="index"
       hoverable:underline
     >
       {{ letter }}
     </button>
-  </h1>
+  </main>
 </template>
 
 <style scoped>
