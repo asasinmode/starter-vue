@@ -15,7 +15,7 @@ const style = $computed(() => `--size: ${size}rem`)
 
 <template>
   <button
-    title="theme toggle" aria-label="auto" aria-live="polite"
+    title="theme toggle" aria-live="polite"
     class="themeToggle" :style="style"
     @click="toggleTheme"
   >

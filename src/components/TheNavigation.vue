@@ -1,6 +1,3 @@
-<script setup lang="ts">
-</script>
-
 <template>
   <RouterLink to="/" self-center justify-self-end text-6 text-link>
     home

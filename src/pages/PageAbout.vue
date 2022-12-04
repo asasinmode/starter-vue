@@ -1,7 +1,3 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
   <main flex-center flex-col>
     <h1>vue 3 starter</h1>
