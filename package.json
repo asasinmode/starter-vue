@@ -1,6 +1,9 @@
 {
   "private": true,
   "packageManager": "pnpm@7.12.0",
+  "description": "Vue 3 starter for new projects ",
+  "author": "asasinmode",
+  "license": "MIT",
   "scripts": {
     "build": "vite build",
     "dev": "vite --open",
