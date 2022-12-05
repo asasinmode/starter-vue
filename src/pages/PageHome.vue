@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import { useDefaultStore } from '@/store'
+
+const { clickedIndexes, handleLetterClick } = useDefaultStore()
+
 const text = 'asasinmode'
 </script>
 
@@ -6,7 +10,9 @@ const text = 'asasinmode'
   <main flex-center>
     <button
       v-for="(letter, index) in text" :key="index"
-      hoverable:underline
+      hoverable="bg-black text-white dark:(bg-white text-hex-121212)"
+      :class="{ 'underline': clickedIndexes.includes(index), '!text-indigo': clickedIndexes.length === text.length }"
+      @click="handleLetterClick(index)"
     >
       {{ letter }}
     </button>
@@ -16,6 +22,7 @@ const text = 'asasinmode'
 <style scoped>
 button {
   font-size: clamp(3.5rem, 12vw, 10rem);
+  transition: background 0s, color 0s;
 }
 button:focus-visible{
   outline: none;
