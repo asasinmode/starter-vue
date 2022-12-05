@@ -43,8 +43,9 @@ pnpm i
 
 ### 4. clean up template
 
-1. update **title** in `index.html`
-2. update `unocss.config.ts`
-3. remove **about** page in `src/router/index.ts` and `src/pages/PageAbout.vue`
-4. remove `src/components/DependencyIcon.vue` and `src/components/DependencyIconsCircle.vue`
-5. remove `src/assets/pinia.svg` and `src/assets/unocss.svg`
+1. update **title** and **favicon** in `index.html`
+2. remove `public/favicon.webp`
+3. update `unocss.config.ts`
+4. remove **about** page in `src/router/index.ts` and `src/pages/PageAbout.vue`
+5. remove `src/components/DependencyIcon.vue` and `src/components/DependencyIconsCircle.vue`
+6. remove `src/assets/pinia.svg` and `src/assets/unocss.svg`
