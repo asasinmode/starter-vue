@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antfu/eslint-config': ^0.33.1
+  '@iconify-json/logos': ^1.1.19
   '@iconify-json/mdi': ^1.1.36
   '@types/node': ^18.11.10
   '@unocss/reset': ^0.47.5
@@ -23,6 +24,7 @@ dependencies:
 
 devDependencies:
   '@antfu/eslint-config': 0.33.1_s5ps7njkmjlaqajutnox5ntcla
+  '@iconify-json/logos': 1.1.19
   '@iconify-json/mdi': 1.1.36
   '@types/node': 18.11.10
   '@unocss/reset': 0.47.5
@@ -250,6 +252,12 @@ packages:
 
   /@humanwhocodes/object-schema/1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: true
+
+  /@iconify-json/logos/1.1.19:
+    resolution: {integrity: sha512-Q2YgFBqI+/7FgUm8ECn8DZLmIMbcQTPK1dVY/1MZiiP6W6jXwkrOluKodVMb8DHbk59L2JsNI7oajV7+sF55Dw==}
+    dependencies:
+      '@iconify/types': 2.0.0
     dev: true
 
   /@iconify-json/mdi/1.1.36:

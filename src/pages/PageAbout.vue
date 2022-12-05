@@ -1,6 +1,10 @@
 <template>
   <main flex-center flex-col>
-    <h1>vue 3 starter</h1>
+    <DependencyIconsCircle />
+    <h1 text-3xl>
+      <a href="https://vuejs.org/" target="_blank" text-link>vue 3</a>
+      starter
+    </h1>
   </main>
 </template>
 

@@ -28,6 +28,7 @@ export default defineConfig({
     {
       'flex-center': 'flex justify-center items-center',
       'text-link': 'op85 hoverable:(underline op100)',
+      'translate-center': 'translate-x--1/2 translate-y--1/2',
     },
     [/^hoverable[:-](.+)$/, ([, c]) => `hover:${c} focus-visible:${c}`],
   ],
