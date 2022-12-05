@@ -15,6 +15,7 @@ export const router = createRouter({
       path: '/404',
       name: 'notFound',
       component: ErrorPage,
+      props: { status: 404, message: 'page not found' },
       meta: {
         layout: LayoutError,
       },
