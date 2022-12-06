@@ -24,6 +24,9 @@ export const router = createRouter({
       path: '/about',
       name: 'about',
       component: () => import('@/pages/PageAbout.vue'),
+      meta: {
+        title: 'about',
+      },
     },
   ],
 })
@@ -33,4 +36,8 @@ const routes = router.getRoutes()
 router.beforeEach((to, _from) => {
   if (!routes.some(route => route.path === to.path))
     return router.push({ name: 'notFound' })
+})
+
+router.afterEach((to) => {
+  document.title = `${to.meta?.title ?? 'vue starter'}`
 })
