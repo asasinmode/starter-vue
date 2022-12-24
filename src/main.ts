@@ -4,7 +4,7 @@ import { router } from './router'
 import App from './App.vue'
 
 import '@unocss/reset/tailwind.css'
-import './assets/main.css'
+import './assets/index.css'
 import 'uno.css'
 
 const pinia = createPinia()

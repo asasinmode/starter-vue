@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useDefaultStore } from '@/store'
+import { useDefaultStore } from '@/store/default'
 
 const { clickedIndexes, handleLetterClick } = useDefaultStore()
 

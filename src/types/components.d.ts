@@ -12,7 +12,7 @@ declare module '@vue/runtime-core' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TheFooter: typeof import('./../components/TheFooter.vue')['default']
-    ThemeToggle: typeof import('./../components/Misc/ThemeToggle.vue')['default']
+    ThemeToggle: typeof import('./../components/ThemeToggle.vue')['default']
     TheNavigation: typeof import('./../components/TheNavigation.vue')['default']
   }
 }
