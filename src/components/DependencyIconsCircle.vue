@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import iconPinia from '@/assets/pinia.svg'
-import iconUnoCSS from '@/assets/unocss.svg'
+import iconPinia from '@/assets/pinia.svg';
+import iconUnoCSS from '@/assets/unocss.svg';
 </script>
 
 <template>
@@ -28,4 +28,3 @@ import iconUnoCSS from '@/assets/unocss.svg'
     </div>
   </div>
 </template>
-

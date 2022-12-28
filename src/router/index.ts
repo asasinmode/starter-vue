@@ -1,7 +1,7 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomePage from '@/pages/PageHome.vue'
-import ErrorPage from '@/pages/PageError.vue'
-import LayoutError from '@/layouts/LayoutError.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import HomePage from '../pages/PageHome.vue';
+import ErrorPage from '@/pages/PageError.vue';
+import LayoutError from '@/layouts/LayoutError.vue';
 
 export const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -29,15 +29,16 @@ export const router = createRouter({
       },
     },
   ],
-})
+});
 
-const routes = router.getRoutes()
+const routes = router.getRoutes();
 
 router.beforeEach((to, _from) => {
-  if (!routes.some(route => route.path === to.path))
-    return router.push({ name: 'notFound' })
-})
+  if (!routes.some(route => route.path === to.path)) {
+    return router.push({ name: 'notFound' });
+  }
+});
 
 router.afterEach((to) => {
-  document.title = `${to.meta?.title ?? 'vue starter'}`
-})
+  document.title = `${to.meta?.title ?? 'vue starter'}`;
+});

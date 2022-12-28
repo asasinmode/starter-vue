@@ -7,10 +7,12 @@
   <title>vue starter</title>
   <meta name="description" content="asasinmode vue starter">
   <script>
-    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-    const setting = localStorage.getItem('color-schema') || 'auto'
-    if (setting === 'dark' || (prefersDark && setting !== 'light'))
-      document.documentElement.classList.toggle('dark', true)
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const setting = localStorage.getItem('color-schema') || 'auto';
+
+    if (setting === 'dark' || (prefersDark && setting !== 'light')) {
+      document.documentElement.classList.toggle('dark', true);
+    }
   </script>
 </head>
 <body w-full min-h-100vh text-hex-121212 dark:text-white dark:bg-hex-121212 font-sans>

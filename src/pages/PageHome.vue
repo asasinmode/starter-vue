@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { useDefaultStore } from '@/store/default'
+import { useDefaultStore } from '@/store/default';
 
-const { clickedIndexes, handleLetterClick } = useDefaultStore()
+const { clickedIndexes, handleLetterClick } = useDefaultStore();
 
-const text = 'asasinmode'
+const text = 'asasinmode';
 </script>
 
 <template>

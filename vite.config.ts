@@ -1,9 +1,9 @@
-import path from 'path'
-import { defineConfig } from 'vite'
-import Vue from '@vitejs/plugin-vue'
-import Components from 'unplugin-vue-components/vite'
-import AutoImport from 'unplugin-auto-import/vite'
-import Unocss from 'unocss/vite'
+import path from 'path';
+import { defineConfig } from 'vite';
+import Vue from '@vitejs/plugin-vue';
+import Components from 'unplugin-vue-components/vite';
+import AutoImport from 'unplugin-auto-import/vite';
+import Unocss from 'unocss/vite';
 
 export default defineConfig({
   resolve: {
@@ -32,4 +32,4 @@ export default defineConfig({
       vueTemplate: true,
     }),
   ],
-})
+});

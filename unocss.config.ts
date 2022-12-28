@@ -6,7 +6,7 @@ import {
   presetWebFonts,
   transformerDirectives,
   transformerVariantGroup,
-} from 'unocss'
+} from 'unocss';
 
 export default defineConfig({
   presets: [
@@ -35,4 +35,4 @@ export default defineConfig({
   rules: [
     [/^grid-area-(.+)$/, ([, c]) => ({ 'grid-area': c })],
   ],
-})
+});

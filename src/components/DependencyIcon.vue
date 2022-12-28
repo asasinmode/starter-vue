@@ -1,21 +1,21 @@
 <script setup lang="ts">
-import type { StyleValue } from 'vue'
+import type { StyleValue } from 'vue';
 
 const { textSquare = false, icon = '' } = defineProps<{
   index: number
   title?: string
   icon?: string
   textSquare?: boolean
-}>()
+}>();
 
 function iconStyle(index: number): StyleValue {
-  const radius = 210
-  const angle = 360 / 8 * (index - 2) * Math.PI / 180
+  const radius = 210;
+  const angle = 360 / 8 * (index - 2) * Math.PI / 180;
 
   return {
     left: `${Math.cos(angle) * radius}px`,
     top: `${Math.sin(angle) * radius}px`,
-  }
+  };
 }
 </script>
 

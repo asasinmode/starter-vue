@@ -1,16 +1,16 @@
 <script setup lang="ts">
 const { size = 2 } = defineProps<{
   size?: number
-}>()
+}>();
 
 function toggleTheme() {
-  const value = document.documentElement.classList.contains('dark') ? 'light' : 'dark'
+  const value = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
 
-  localStorage.setItem('color-schema', value)
-  document.documentElement.classList.toggle('dark')
+  localStorage.setItem('color-schema', value);
+  document.documentElement.classList.toggle('dark');
 }
 
-const style = $computed(() => `--size: ${size}rem`)
+const style = $computed(() => `--size: ${size}rem`);
 </script>
 
 <template>
